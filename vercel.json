@@ -1,11 +1,19 @@
 {
   "version": 2,
   "builds": [
-    { "src": "BlogFootball-main/**/*", "use": "@vercel/static" },
-    { "src": "api/football.js", "use": "@vercel/node" }
+    { "src": "cobacoba-main/BlogFootball-main/**", "use": "@vercel/static" },
+    { "src": "cobacoba-main/api/football.js", "use": "@vercel/node" }
   ],
-  "routes": [
-    { "src": "/api/football", "dest": "/api/football.js" },
-    { "src": "/(.*)", "dest": "BlogFootball-main/$1" }
+  "rewrites": [
+    { "source": "/api/football", "destination": "cobacoba-main/api/football.js" },
+    { "source": "/(.*)", "destination": "cobacoba-main/BlogFootball-main/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(js|css|png|jpg|jpeg|webp|svg)$",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
   ]
 }
