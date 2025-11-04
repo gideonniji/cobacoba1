@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog-football-chi.vercel.app/sitemap.xml
