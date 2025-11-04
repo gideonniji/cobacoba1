@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "BlogFootball-main/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    {
+      "src": "/api/football",
+      "dest": "/api/football.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "BlogFootball-main/$1"
+    }
+  ]
+}

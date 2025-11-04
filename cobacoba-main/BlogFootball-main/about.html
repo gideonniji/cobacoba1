@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="description" content="Website berita dan jadwal sepak bola — skor, jadwal, dan klasemen.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | BlogFootball</title>
+  <meta property="og:title" content="Tentang Kami | BlogFootball">
+  <meta property="og:description" content="Berita sepak bola, jadwal, dan klasemen.">
+  <meta property="og:image" content="https://blog-football-chi.vercel.app/images/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS CSS untuk Animasi -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* CHANGE: Unified header & animations */.site-header{background:transparent;padding:10px 0}.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0 16px}.brand{font-weight:700;color:inherit;text-decoration:none;font-size:1.1rem}.menu-toggle{background:transparent;border:0;font-size:1.4rem;display:none}.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px}.main-nav a{text-decoration:none;padding:6px 8px;border-radius:6px}.main-nav a:hover{background:rgba(255,255,255,0.04)}@media(max-width:800px){.menu-toggle{display:block}.main-nav{position:absolute;right:16px;top:56px;background:rgba(0,0,0,0.9);padding:12px;border-radius:8px;display:none}.main-nav.open{display:block}.main-nav ul{flex-direction:column}}.reveal{opacity:0;transform:translateY(12px);transition:all 600ms ease}.reveal-anim{opacity:1;transform:none}.loading{opacity:0.6}.skip-link{position:absolute;left:-9999px;top:auto;background:#000;color:#fff;padding:8px;z-index:1000}.skip-link:focus{left:10px;top:10px;border-radius:4px}img{max-width:100%;height:auto;display:block}</style></head>
+<body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;">Skip to content</a>
+
+  
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/BlogFootball-main/index.html" class="brand">BlogFootball</a>
+    <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/BlogFootball-main/index.html">Home</a></li>
+        <li><a href="/BlogFootball-main/jadwal-skor.html">Jadwal & Skor</a></li>
+        <li><a href="/BlogFootball-main/eropa.html">Eropa</a></li>
+        <li><a href="/BlogFootball-main/dunia.html">Dunia</a></li>
+        <li><a href="/BlogFootball-main/trending.html">Trending</a></li>
+        <li><a href="/BlogFootball-main/bokstainment.html">Bokstainment</a></li>
+        <li><a href="/BlogFootball-main/about.html">About</a></li>
+        <li><a href="/BlogFootball-main/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="content-page" data-aos="fade-up" id="main-content">
+    <h2>Tentang BlogFootball</h2>
+
+    <div class="about-content">
+        <p><strong>BlogFootball</strong> adalah sumber terpercaya Anda untuk semua hal tentang sepak bola. Kami hadir untuk menyajikan berita terkini, hasil pertandingan *real-time*, analisis mendalam, dan cerita-cerita menarik dari lapangan hijau di seluruh dunia.</p>
+
+        <h3>Visi Kami</h3>
+        <p>Menjadi platform berita sepak bola terkemuka di Indonesia yang tidak hanya cepat dalam menyampaikan informasi, tetapi juga akurat dan mudah diakses oleh semua kalangan penggemar.</p>
+
+        <h3>Apa yang Kami Sajikan?</h3>
+        <ul>
+            <li><strong>Berita Utama:</strong> Informasi terpanas dari liga-liga top seperti Premier League, La Liga, Serie A, Bundesliga, dan Liga Champions.</li>
+            <li><strong>Live Score:</strong> Pembaruan skor langsung yang cepat dan detail.</li>
+            <li><strong>Analisis Pertandingan:</strong> Ulasan taktis, prediksi, dan pandangan ahli setelah pertandingan berakhir.</li>
+            <li><strong>Transfer & Rumor:</strong> Perkembangan terbaru di bursa transfer pemain.</li>
+        </ul>
+
+        <h3>Tim Kami</h3>
+        <p>Kami adalah tim penggemar sepak bola yang berdedikasi, bersemangat dalam jurnalistik, dan berkomitmen untuk menyajikan konten berkualitas. Kami percaya bahwa setiap *goal*, setiap kartu, dan setiap drama di lapangan layak untuk diulas secara mendalam.</p>
+    </div>
+
+  </main>
+
+  <footer data-aos="fade-up" data-aos-delay="50">
+    <p>&copy; 2025 BlogFootball. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- AOS Script untuk efek animasi -->
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true,
+            mirror: false,
+            offset: 80,
+        });
+    }
+  </script>
+<script>/* CHANGE: common UI helpers added */document.addEventListener('DOMContentLoaded', function(){var btn=document.querySelector('.menu-toggle'),nav=document.getElementById('main-nav');if(btn&&nav){btn.addEventListener('click',function(){var exp=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!exp);nav.classList.toggle('open');});}});</script></body>
+</html>

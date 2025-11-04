@@ -1,0 +1,1 @@
+Optimized package. Set FOOTBALL_API_KEY env var in Vercel.
